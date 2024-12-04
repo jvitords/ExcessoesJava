@@ -1,0 +1,39 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Reserva {
+
+	private Integer numeroDoQuartoInteger;
+	private Date chekIn;
+	private Date chekOut;
+
+	public Reserva() {
+	}
+
+	public Reserva(Integer numeroDoQuartoInteger, Date chekIn, Date chekOut) {
+		this.numeroDoQuartoInteger = numeroDoQuartoInteger;
+		this.chekIn = chekIn;
+		this.chekOut = chekOut;
+	}
+
+	public Integer getNumeroDoQuartoInteger() {
+		return numeroDoQuartoInteger;
+	}
+
+	public Date getChekIn() {
+		return chekIn;
+	}
+
+	public Date getChekOut() {
+		return chekOut;
+	}
+	
+	public void atualizarReserva(Integer numeroDoQuartoInteger, Date chekIn, Date chekOut) {
+		this.numeroDoQuartoInteger = numeroDoQuartoInteger;
+		this.chekIn = chekIn;
+		this.chekOut = chekOut;
+	}
+	
+	
+}
