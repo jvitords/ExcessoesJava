@@ -15,7 +15,7 @@ public class Reserva {
 	}
 
 	public Reserva(Integer numeroDoQuartoInteger, Date chekIn, Date chekOut) {
-		if (!chekOut.after(chekIn)) {
+		if (chekIn.after(chekOut)) {
 			throw new DomainException("A data de CheckOut deve ser depois do CheckIn!");
 		}
 		this.numeroDoQuarto = numeroDoQuartoInteger;
